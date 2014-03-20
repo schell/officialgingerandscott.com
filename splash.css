@@ -1,0 +1,29 @@
+h1 {
+  padding-top:1em;
+  font-family:'Oleo Script', cursive;
+  color:white;
+  text-shadow: 0px 1px 1px black;
+}
+body {
+  background-color:transparent;
+  color:#333;
+}
+.container-fluid {
+  padding:0px;
+}
+.header {
+  padding:1em;
+  background:url(losangeles.jpg) no-repeat center top fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+.links {
+  text-align:center;
+  border-bottom:solid #eee 1px;
+  margin-bottom:1em;
+}
+.links a {
+  padding:0px 5px;
+}

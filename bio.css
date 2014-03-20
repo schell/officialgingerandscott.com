@@ -1,0 +1,9 @@
+h1, .navbar-brand {
+  font-family:'Oleo Script', cursive;
+}
+.footer {
+  margin-top:20px;
+  border-top:solid #eee 1px;
+  color:#aaa;
+}
+
