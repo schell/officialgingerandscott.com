@@ -13,31 +13,26 @@
     <!-- Bootstrap core CSS -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet" type="text/css">
-    <link href="bio.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     <div class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container">
         <a href="index.html" class="navbar-brand">The Official Ginger &amp; Scott</a>
         <ul class="nav navbar-nav">
-          <li><a href="ginger.html">Ginger</a></li>
-          <li><a href="scott.html">Scott</a></li>
-          <li class="active"><a href="events.html">Events</a></li>
+          <li $if(ginger-active)$ class="active" $endif$><a href="/ginger">Ginger</a></li>
+          <li $if(scott-active)$ class="active" $endif$><a href="/scott">Scott</a></li>
+          <li $if(events-active)$ class="active" $endif$><a href="/events">Events</a></li>
+          <li $if(shop-active)$ class="active" $endif$><a href="/shop">Shop</a></li>
+          <li $if(press-active)$ class="active" $endif$><a href="/press">Press</a></li>
         </ul>
       </div>
     </div>
     <div class="container">
-      <div class="page-header">
-        <h1>Events</h1>
-      </div>
-      <div class="row">
-        <div class="bio text-center col-md-6">
-          <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=sfvca8q6qk4vsegt3rev3fos70%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-      </div>
+      $body$
       <div class="footer">
-        <small>Design and html by <a href="http://efnx.com">Schell Scivally</a></small>
+        <small>This site is happily powered by <a href="http://zyghost.com">Schell Scivally</a></small>
       </div>
     </div>
   </body>

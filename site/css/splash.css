@@ -13,7 +13,7 @@ body {
 }
 .header {
   padding:1em;
-  background:url(suicide-bridge.jpg) no-repeat top center fixed;
+  background:url(/images/board.jpg) no-repeat top center fixed;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
