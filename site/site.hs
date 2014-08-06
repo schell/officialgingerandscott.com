@@ -2,7 +2,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
-import           Data.Monoid (mappend)
 import           System.FilePath
 
 --------------------------------------------------------------------------------
@@ -45,12 +44,6 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
-
 --------------------------------------------------------------------------------
-postCtx :: Context String
-postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
-    defaultContext
-
 directoryIndex :: Identifier -> FilePath
 directoryIndex = (</> "index.html") . dropExtension . takeFileName . toFilePath
